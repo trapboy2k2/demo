@@ -103,7 +103,39 @@ body{
     margin-top: 30px;
 }
 .input label{
+    font-weight: 500;
+    /* color: black; */
+    font-size: 1em;
     position: absolute;
     top: 50%;
+    /* color: #fff; */
     left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+.input input:focus~label,
+.input input:valid~label {top: -5px;}
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em ;
+    font-weight: 600;
+}
+.input .ti-email
+{
+    position: absolute;
+    right: 8px;
+    margin-top: 16px;
+}
+.input .ti-lock
+{
+    position: absolute;
+    right: 8px;
+    margin-top: 1px;
+    font-size: 1.2em;
+    line-height: 57px;
 }
