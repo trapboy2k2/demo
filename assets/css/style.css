@@ -24,6 +24,7 @@ body{
     z-index: 99;
 
 }
+
 .logo{
     font-size: 34px;
     color:aliceblue;
@@ -83,11 +84,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
+}
+.wrapper .ti-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color:rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:20px ;
 }
 .wrapper .form-login{
     width: 100%;
-    padding: 68px;
+    padding: 50px;
 }
 .form-login h2{
     font-size: 40px;
@@ -100,7 +115,7 @@ body{
     width: 100%;
     height: 50px;
     border-bottom: 2px solid #fff;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .input label{
     font-weight: 500;
@@ -124,6 +139,7 @@ body{
     outline: none;
     font-size: 1em ;
     font-weight: 600;
+    padding: 0 35px 0 5px;
 }
 .input .ti-email
 {
@@ -138,4 +154,51 @@ body{
     margin-top: 1px;
     font-size: 1.2em;
     line-height: 57px;
+}
+.save-password{
+    font-weight: 400;
+    margin: 13px 0 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.save-password label input{
+    accent-color: black;
+    margin-right: 8px;
+}
+.save-password a{
+    color: black;
+    text-decoration: none;
+
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: purple;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+.btn:hover{
+    background-color: antiquewhite;
+    color: blue;
+}
+.no-account{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 16px 0;
+}
+.no-account p a {
+    color: black;
+    text-decoration: none ;
+    font-weight: 600;
+}
+.no-account p a:hover{
+    text-decoration: underline;
 }
