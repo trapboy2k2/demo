@@ -100,9 +100,14 @@ body{
     align-items: center;
     border-bottom-left-radius:20px ;
 }
+.wrapper .ti-close:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
 .wrapper .form-login{
     width: 100%;
     padding: 50px;
+    display: none;
 }
 .form-login h2{
     font-size: 40px;
@@ -155,6 +160,13 @@ body{
     font-size: 1.2em;
     line-height: 57px;
 }
+.input .ti-user{
+    position: absolute;
+    right: 8px;
+    margin-top: 1px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
 .save-password{
     font-weight: 400;
     margin: 13px 0 ;
@@ -201,4 +213,7 @@ body{
 }
 .no-account p a:hover{
     text-decoration: underline;
+}
+.form-register h2{
+    text-align: center;
 }
